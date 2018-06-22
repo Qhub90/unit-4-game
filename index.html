@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Crystal Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+   
+   
+</head>
+<body>
+<div class ="jumbotron text-center">
+    <h1>Crystal Collector!</h1>
+</div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-lg-6">
+          <p>You will be given a random number at the start of the game.</p>
+          <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total scrore.</p>
+          <p>You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</p>
+          <p>The value of each crystal is hidden from you until you click on it.</p>
+          <p>Each time when the game starts, the game will change the value of each crystal.</p>
+      </div>
+  </div> 
+
+  <div class="row">
+      <div class="col-lg-3 border">
+          <h1 id="number-to-match"></h1>
+         <!-- Randomly generated number -->
+      </div>
+      <div class ="col-lg-3 border" id="Wins">
+         <h2>Wins<h2>             
+      </div>
+      <div class ="col-lg-3 border " id="Losses">
+        <h2>Losses</h2>
+      </div>
+  </div>
+  
+  <div class="row">
+      <div class="col-lg-2">
+        <button class="btn crystal-img " id="blackCrystal"><img class="img-thumbnail" src="assets\images\blackCrystal.jpg"></button>
+      </div>
+      <div class="col-lg-2">
+        <button class="btn crystal-img" id="blueCrystal"><img class="img-thumbnail" src="assets\images\blueCrystal.jpg"></button>
+      </div>
+      <div class="col-lg-2">
+        <button class="btn crystal-img" id="greenCrystal"><img class="img-thumbnail" src="assets\images\greenCrystal.png"></button>
+      </div>
+      <div class="col-lg-2">
+        <button class="btn crystal-img" id="redCrystal"><img class="img-thumbnail" src="assets\images\redCrystal.jpg"></button>
+      </div>    
+  </div>
+
+  <div class="row">
+      <div class="col-lg-3 border"id="textBox">
+          <!-- total score is: -->
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="col-lg-3 border" id="lastBox">
+          <!-- Actual total score -->
+      </div>
+  </div>
+
+</div>
+
+
+
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+<script src="assets\javascript\game.js"></script>      
+</body>
+</html>
